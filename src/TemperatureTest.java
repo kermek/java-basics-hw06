@@ -12,10 +12,11 @@ public class TemperatureTest {
   @DataProvider(name = "Fahrenheit")
   public static Object[][] fahrenheit() {
     return new Object[][]{
-        {212.0, 100.0},
-        {32.0, 0.0},
-        {-15, -26.11111111111111}
-        // TODO add 2 more test data here
+            {212.0, 100.0},
+            {32.0, 0.0},
+            {-15, -26.11111111111111},
+            {-40, -40},
+            {98.6, 37}
     };
   }
 
@@ -26,10 +27,11 @@ public class TemperatureTest {
   @DataProvider(name = "Celsius")
   public static Object[][] celsius() {
     return new Object[][]{
-        {100.0, 212.0},
-        {0.0, 32.0},
-        {-26.11111111111111, -15}
-        // TODO add 2 more test data here
+            {100.0, 212.0},
+            {0.0, 32.0},
+            {-26.11111111111111, -15},
+            {48, 118.4},
+            {19.444444444444446, 67.0}
     };
   }
 
